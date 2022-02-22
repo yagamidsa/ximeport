@@ -57,7 +57,7 @@ ROOT_URLCONF = 'portafolioximena.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['experiencia/templates'],
+        'DIRS': [os.path.join(BASE_DIR , "/apps/experiencia/templates/"),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
