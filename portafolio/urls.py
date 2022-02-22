@@ -9,5 +9,5 @@ app_name = 'portafolio'
 urlpatterns = [
 
     path('about/', about, name='about'),
-    path('skill/', skill, name='skill'),
+    path('Skill/', skill, name='skill'),
 ]
