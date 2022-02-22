@@ -136,7 +136,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 STATIC_URL = "/static/"
-django_heroku.setting(locals())
+django_heroku.settings(locals())
 
 
 
