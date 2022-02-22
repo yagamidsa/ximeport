@@ -26,7 +26,7 @@ from experiencia import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('experiencia/', views.exper, name='experiencia'),
+    path('experiencia/', include('experiencia.urls')),
     path('', include('portafolio.urls')),
 ]
 
