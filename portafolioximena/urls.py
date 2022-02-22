@@ -20,14 +20,13 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from portafolio import views
-from experiencia import views
-
+from experiencia import views2
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('', include('experiencia.urls')),
+    path('', views2.exper, name='experi'),
     path('', include('portafolio.urls')),
 ]
 
