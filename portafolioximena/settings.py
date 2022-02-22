@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import os 
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-nvi)zul0@#q5+4=(1rnja^16ocd_^+*m9zf8fk74f6!30h5&98
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['portafolioximena.herokuapp.com']
 
 
 # Application definition
@@ -75,12 +76,24 @@ WSGI_APPLICATION = 'portafolioximena.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'df61saegmt77ft',
+        'USER': 'pttbmvpfirizze',
+        'PASSWORD': 'c0e2808bb95ce2b2a55742ba058be13b26ae97c64355710164e2a81ca3705756',
+        'HOST': 'ec2-34-206-148-196.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
@@ -117,9 +130,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = '/media/'
+#STATIC_URL = 'static/'
+#MEDIA_ROOT = BASE_DIR / 'media'
+#MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
+STATIC_URL = "/static/"
+django_heroku.setting(locals())
+
 
 
 # Default primary key field type
