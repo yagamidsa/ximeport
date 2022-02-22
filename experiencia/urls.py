@@ -7,6 +7,6 @@ app_name = 'experiencia'
 
 urlpatterns = [
 
-    path('',exper,name='experiencias')
+    path('experiencia/',exper,name='experiencias')
 
 ]
