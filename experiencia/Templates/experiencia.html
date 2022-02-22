@@ -1,0 +1,35 @@
+{% extends 'layout.html'%}
+
+{%block content%}
+
+{% for project in projects%}
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-7">
+            <div class="card p-3">
+                <div class="row">
+                    <div class="col-12 col-md-5"> <iframe src={{project.url}} frameborder="0" class="responsive" height="100%" width="100%"></iframe> </div>
+                    <div class="col-12 col-md-7 py-3 px-4"> <span> <i class="fa fa-battery-full" aria-hidden="true"></i> <i class="fa fa-headphones" aria-hidden="true"></i> </span>
+                        <p class="small font-weight-bold my-2 text-light">{{project.date}}</p>
+                        <h6 class="mb-3 text-light">{{project.title}}</h6>
+                        <p class="text-light"> {{project.description}}</p>
+                        <div class="d-flex mb-3"> <button class="btn mr-3"  onclick="window.location.href='{{project.Web}}/';"> WEB </button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{%endfor%}
+
+
+
+
+
+
+
+{%endblock%}

@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+
+
+{%block content%}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="box ">
+            <img class="avatar" src="{% static 'images/pngwing.png' %}" alt=""></img>
+            <p class="parrafo text-light">email: ximenach096@hotmail.com</p>
+            <p class="parrafo text-light">Bogotá, Colombia</p>
+            <p class="parrafo text-light">Cel. 3134292447</p>
+        </div>
+        <div class="box2">
+            <a href="{% url 'portafolio:about'%}" class="links effect-underline">ACERCA DE MÍ<br></a>
+            <a href="{% url 'experiencia:experiencias'%}" class="links effect-underline">EXPERIENCIAS<br></a>
+            <a href="{% url 'portafolio:skill'%}" class="links2 effect-underline2">MIS SKILLS</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

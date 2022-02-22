@@ -1,0 +1,16 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light effect-underline3" href="/">PORTAFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-light effect-underline3" href="{% static 'doc/CVMariaXimenaCeballos.docx'%}">Hoja de vida</a>
+          <a class="nav-link text-light effect-underline3" href="{% url 'experiencia:experiencias'%}">Experiencias</a>
+        </div>
+      </div>
+    </div>
+  </nav>

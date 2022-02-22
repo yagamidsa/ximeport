@@ -1,0 +1,643 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+   }
+
+
+
+body{
+
+    /* Aquí el origen de la imagen */
+  background-image: url(./images/portada.jpg);
+
+  /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+  background-position: center center;
+
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+
+  /* COn esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+}
+
+
+
+
+
+
+.container{
+
+    margin-top: 70px;
+    margin-bottom: 28px;
+    position: relative;
+    
+    
+}
+
+.box{
+    width: 400px;
+    height: 450px;
+    margin-top: 4em;
+    margin-left: 700px;
+    font-family: 'Roboto Serif', sans-serif;
+
+}
+
+.box2{
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    margin-top: -25px;
+    margin-left: 75px;
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.parrafo{
+
+    font-size: 10px;
+    margin-top: -17px;
+    text-align: center;
+
+}
+
+.links{
+    color: #f0f9ff;
+    font-size: 150%;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  
+  
+}
+
+.links:hover{
+    color: #f0f9ff;
+} 
+
+
+.links2{
+    color: #f0f9ff;
+    font-size: 150%;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  
+  
+}
+
+.links2:hover{
+    color: #f0f9ff;
+} 
+
+.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 45%;
+    width: 70%;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 60%;
+    border-radius:  50%;
+    background-size: 100% auto;
+    margin: 16%;
+    border: solid 4px rgb(235, 225, 225);
+    animation: slideMe .7s ease-in; 
+        
+}
+
+@keyframes slideMe {
+
+    0%{
+
+        transform: skew(53deg) translateX(-500px);
+
+    }60%{
+        transform: translateX(0px);
+    }62%{
+        transform: skew(0deg) translateX(30px);
+    }70%{
+        transform: skew(-20deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+
+    
+}
+
+@keyframes slideMe2 {
+
+    0%{
+
+        transform: skew(53deg) translateY(1000px);
+
+    }60%{
+        transform: translateY(0px);
+    }62%{
+        transform: skew(0deg) translateY(30px);
+    }70%{
+        transform: skew(-20deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+
+    
+}
+
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32
+    
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0
+}
+
+.footer-dark .item.social {
+    text-align: center
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px
+    }
+}
+
+
+
+/*effect-underline*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: -32px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+    color: #f0f9ff;
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+/*effect-underline*/
+a.effect-underline2:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 7px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+    color: #f0f9ff;
+}
+
+a.effect-underline2:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0
+}
+
+
+
+
+/* experiencia card*/
+
+.container-fluid{
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+    animation: slideMe2 0.5s ease-in;
+
+}
+
+.card {
+    background-color: #31303080;
+    border-radius: 50px
+}
+
+iframe {
+    border-radius: 30px
+}
+
+.responsive {
+    min-height: 200px;
+    max-height: 400px
+}
+
+
+
+p {
+    color: #b7b1b1;
+    font-weight: 500;
+    font-size: 14px
+}
+
+.btn,
+.btn:active,
+.btn:hover {
+    color: #b7b1b1;
+    font-size: 80%;
+    font-weight: bold;
+    border-radius: 10px
+}
+
+.btn {
+    background-color: #f2f2f3
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #dddddf
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none
+}
+
+*:focus {
+    outline: none
+}
+
+
+/*
+about
+*/
+
+.container2 {
+    color: #ec5626;
+    text-align: center;
+    padding: 100px;
+    margin-top: -5em;
+    margin-bottom: 4em;
+
+    
+}
+
+.folded-corner:hover .text {
+    visibility: visible;
+    color: #ffffff;
+}
+
+.Services-tab {
+    margin-top: 80px
+}
+
+.folded-corner {
+    padding: 60px 30px;
+    position: relative;
+    font-size: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background: transparent;
+    transition: all ease .5s;
+    border: 1px solid #ffffff50
+    
+}
+
+.folded-corner:hover {
+    background-color: #ec562660
+}
+
+.folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd #000;
+    transition: all ease .3s
+}
+
+.folded-corner:hover:before {
+    background-color: #D0000360;
+    border-width: 0 50px 50px 0;
+    border-color: #eee #000
+    
+}
+
+.service_tab_1 {
+    background-color: #00000060
+}
+
+.service_tab_1:hover .fa-icon-image {
+    color: rgb(248, 248, 248);
+    transform: scale(1.5)
+}
+
+.fa-icon-image {
+    color: #ffffff;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99, .82, .11, 1.41)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+skill
+*/
+
+
+.container6 {
+    max-width: 800px;
+    background-color: #03030393;
+    border-radius: 3% 3% 3% 3%;
+    padding: 0
+}
+
+.review {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px 0
+}
+
+.name {
+    font-size: 18px;
+    color: #c1e718;
+    margin: 0
+}
+
+.job {
+    color: #c8c8c8;
+    font-size: 14px
+}
+
+.carousel-inner {
+    max-width: 800px
+}
+
+.fa-minus {
+    font-size: 14px
+}
+
+.carousel-indicators {
+    bottom: -20px;
+    right: 0;
+    margin: 0
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    border: 2px solid black;
+    width: 10px;
+    background-color: inherit;
+    border-radius: 50%
+}
+
+.carousel-indicators .active {
+    border: 2px solid transparent;
+    background-color: #c1e718
+}
+
+.left {
+    color: rgb(20, 20, 20);
+    font-weight: 600
+}
+
+.right {
+    color: rgb(12, 12, 12);
+    font-weight: 600
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: relative
+}
+
+@media (max-width:560px) {
+    .review {
+        font-size: 14px;
+        font-weight: 600
+    }
+
+    .name {
+        font-size: 13px
+    }
+
+    .job {
+        font-size: 10px
+    }
+
+    .right {
+        font-size: 12px
+    }
+
+    .left {
+        font-size: 12px
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 8px;
+        border: 1px solid black;
+        width: 8px;
+        background-color: inherit;
+        border-radius: 50%
+    }
+
+    .carousel-indicators .active {
+        border: 1px solid transparent;
+        background-color: #c1e718
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1920px){
+    
+
+    a.effect-underline:after {
+        content: '';
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid;
+      margin-top: -57px;
+      opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+        color: #f0f9ff;
+    }
+
+
+ 
+    .parrafo{
+
+        font-size: 11px;
+        margin-top: -17px;
+        margin-left: 10px;
+        
+    
+    }
+
+    .links{
+        color: #f0f9ff;
+        font-size: 280%;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      
+      
+    }
+
+    .links2{
+        color: #f0f9ff;
+        font-size: 280%;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      
+      
+    }
+
+    .avatar {
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+        height: 45%;
+        width: 65%;
+        /* los siguientes valores son independientes del tamaño del círculo */
+        background-repeat: no-repeat;
+        background-position: 60%;
+        border-radius:  50%;
+        background-size: 100% auto;
+        margin: center;
+        border: solid 6px rgb(235, 225, 225);
+        animation: slideMe2 1.5s ease-in; 
+            
+    }
+    
+}
