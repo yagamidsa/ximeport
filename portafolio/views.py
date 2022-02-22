@@ -11,5 +11,5 @@ def about(request):
 
 def skill(request):
     var1 = Skill.objects.all()
-    return render(request, 'skill.html',{'experiencia':var1})
+    return render(request, 'Skill.html',{'experiencia':var1})
 
