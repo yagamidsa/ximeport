@@ -6,7 +6,7 @@ from django.db.models.fields.files import ImageField
 
 
 class Skill(models.Model):
-    imagenlugar = models.ImageField(upload_to="portafolio\images")
+    imagenlugar = models.ImageField(upload_to="portafolio\static\images")
     carrera = CharField(max_length=100)
     lugarcarrera = CharField(max_length=250)
     descripcion = CharField(max_length=250)
