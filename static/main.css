@@ -31,7 +31,7 @@ body{
 
 .container{
     
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: 28px;
     position: relative;
 
@@ -40,23 +40,23 @@ body{
 }
 
 .box{
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 550px;
     text-align: center;
-    margin-top: 4em;
-    margin-left: 700px;
+    margin-top: 1em;
+    margin-left: 70px;
     font-family: 'Roboto Serif', sans-serif;
 
 
 }
 
 .box2{
-    width: 600px;
+    width: 500px;
     height: 200px;
     position: absolute;
-    top: 36%;
+    top: 50%;
     margin-top: -100px;
-    margin-left: 75px;
+    margin-left: 600px;
     text-align: center;
     font-family: 'Roboto Serif', sans-serif;
 
@@ -66,8 +66,18 @@ body{
 
 .parrafo{
 
-    font-size: 11px;
-    margin-top: -17px;
+    
+    font-size: 45px;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+
+}
+
+.parrafo2{
+
+    
+    font-size: 15px;
     margin-left: 10px;
     
 
@@ -75,7 +85,7 @@ body{
 
 .links{
     color: #f0f9ff;
-    font-size: 280%;
+    font-size: 35px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
@@ -94,7 +104,7 @@ body{
 
 .links2{
     color: #f0f9ff;
-    font-size: 280%;
+    font-size: 35px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
@@ -127,6 +137,12 @@ body{
     animation: slideMe2 1.5s ease-in; 
         
 }
+
+
+
+.iconoWhatsapp:hover {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    }
 
 
 
@@ -248,7 +264,7 @@ a.effect-underline:after {
   height: 1em;
   width: 100%;
   border-bottom: 1px solid;
-  margin-top: -59px;
+  margin-top: -47px;
   opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -495,8 +511,12 @@ skill
     max-width: 800px;
     background-color: #03030393;
     border-radius: 3% 3% 3% 3%;
+    margin-left: center;
     padding: 0
 }
+
+
+
 
 .review {
     font-size: 30px;
@@ -601,18 +621,18 @@ skill
     
     .container{
     
-        margin-top: 5px;
-        margin-bottom: 10em;
+        margin-top: 1px;
+        margin-bottom: 30em;
         
     }   
     
     .box{
         
-        width: 400px;
+        width: 450px;
         height: 450px;
         text-align: center;
         margin-top: 0em;
-        margin-left: 1px;
+        margin-left: -4px;
         font-family: 'Roboto Serif', sans-serif;
     
     
@@ -622,8 +642,8 @@ skill
         
         width: 600px;
         height: 200px;
-        top: 95%;
-        margin-top: -25px;
+        top: 170%;
+        margin-top: -90px;
         margin-left: 7px;
         text-align: center;
         font-family: 'Roboto Serif', sans-serif;
@@ -653,15 +673,24 @@ skill
  
     .parrafo{
 
-        font-size: 10px;
+        font-size: 35px;
         margin-top: -17px;
         text-align: center;
     
-    }   
+    }
+    
+    .parrafo2{
+    
+        
+        font-size: 20px;
+        margin-left: 10px;
+        
+    
+    }
 
     .links{
         color: #f0f9ff;
-        font-size: 150%;
+        font-size: 155%;
       text-align: center;
       vertical-align: middle;
       text-decoration: none;
