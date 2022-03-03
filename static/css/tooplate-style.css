@@ -10,6 +10,7 @@ http://www.tooplate.com/view/2106-soft-landing
 
   body {
     font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
     overflow-x: hidden;
     background: #f9f9f9;
   }
