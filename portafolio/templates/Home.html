@@ -4,20 +4,294 @@
 {%block content%}
 {% load static %}
 
-<div class="container">
-    <div class="row">
-        <div class="box ">
-            <img class="avatar" src="{% static 'images/pngwing.png' %}" alt=""></img>
-            <p class="parrafo text-light">Maria Ximena Ceballos Hurtado</p>
-            <p class="parrafo2 text-light">email: ximenach096@hotmail.com</p>
-            <p class="parrafo2 text-light">Bogotá, Colombia</p>
-            <a href="https://wa.me/+573134292447/?text=Hola!%20estamos%20interesados%20en%20tus%20Servicios" target="_blank"><img class="iconoWhatsapp" src="{% static 'images/whatsapp.png'%}"/></a><p class="parrafo2 text-light">Cel. 3134292447</p>
-        </div>
-        <div class="box2">
-            <a href="{% url 'portafolio:about'%}" class="links effect-underline">ACERCA DE MÍ<br></a>
-            <a href="{% url 'experiencia:experiencia'%}" class="links effect-underline">EXPERIENCIAS<br></a>
-            <a href="{% url 'portafolio:skill'%}" class="links2 effect-underline2">MIS SKILLS</a>
-        </div>
-    </div>
-</div>
+
+
+
+
+<!-- PRE LOADER -->
+<section class="preloader">
+     <div class="spinner">
+
+          <span class="spinner-rotate"></span>
+
+     </div>
+</section>
+
+
+<!-- MENU -->
+<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+
+               <!-- lOGO TEXT HERE -->
+               <a href="" class="navbar-brand">Mi Potafolio</a>
+          </div>
+
+          <!-- MENU LINKS -->
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                    <li><a href="#home" class="smoothScroll">Inicio</a></li>
+                    <li><a href="#feature" class="smoothScroll">Acerca de Mí</a></li>
+                    <li><a href="#about" class="smoothScroll">Experiencias</a></li>
+                    <li><a href="#pricing" class="smoothScroll">Skills</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contacto</a></li>
+                    <li><a href="{% static 'doc/CVMariaXimenaCeballos.docx'%}" class="smoothScroll">Hoja de vida</a></li>
+               </ul>
+          </div>
+
+     </div>
+</section>
+
+
+<!-- FEATURE -->
+<section id="home" data-stellar-background-ratio="0.5">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-3 col-md-6 col-sm-12">
+                    <div class="home-info headline">
+                         <h3>Profesional en Mercadeo</h3>
+                         <h1 class="text-js">MARIA XIMENA CEBALLOS HURTADO</h1>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- FEATURE -->
+<section class="scroll-container" id="feature" data-stellar-background-ratio="0.5">
+     <div class="container scroll-element js-scroll slide-right">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="section-title fade_Right">
+                         <h1 class="">Acerca de Mí</h1>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <ul class="nav nav-tabs fade_Right" role="tablist">
+                         <li class="active"><a href="#tab01" aria-controls="tab01" role="tab"
+                                   data-toggle="tab">Valor1</a></li>
+
+                         <li><a href="#tab02" aria-controls="tab02" role="tab" data-toggle="tab">Valor2</a></li>
+
+                         <li><a href="#tab03" aria-controls="tab03" role="tab" data-toggle="tab">Valor3</a></li>
+                    </ul>
+
+                    <div class="tab-content fade_Right">
+                         <div class="tab-pane active fade_Right" id="tab01" role="tabpanel">
+                              <div class="tab-pane-item">
+                                   <h2>Quick Support</h2>
+                                   <p>Mauris rutrum est at fringilla pulvinar. Nam ligula urna, lobortis non scelerisque
+                                        vel, molestie eu massa. Nullam mattis elit at tortor accumsan.</p>
+                              </div>
+                              <div class="tab-pane-item">
+                                   <h2>Managed Stuffs</h2>
+                                   <p>Quisque ullamcorper sem quis sapien cursus efficitur. Sed id sodales ipsum. Morbi
+                                        eleifend tempus erat sit amet vehicula. Nulla at posuere tellus, non mattis
+                                        erat. Nulla id massa gravida.</p>
+                              </div>
+                         </div>
+
+
+                         <div class="tab-pane" id="tab02" role="tabpanel">
+                              <div class="tab-pane-item">
+                                   <h2>alñksdlñklañskldklñask</h2>
+                                   <p>sdklñfklsdklñfklñsdklñfklñsdklfklñsdklfklñsdkflklñsdklfklñsdklfñklñsdklf.</p>
+                              </div>
+                              <div class="tab-pane-item">
+                                   <h2>alskdlñkalsñd</h2>
+                                   <p>asñdlñalsñdlñaslñdlñaslñdlñaslñdlñaslñdlñaslñdlñasl.</p>
+                              </div>
+                              <div class="tab-pane-item">
+                                   <h2>alskdlñaksldklñasl</h2>
+                                   <p>asdlkalskdlñkasñlkdlñkaslñkdlñkaslñkdlñkaslñdklañsk.</p>
+                              </div>
+                         </div>
+
+                         <div class="tab-pane" id="tab03" role="tabpanel">
+                              <div class="tab-pane-item">
+                                   <h2>Quick Support</h2>
+                                   <p>Mauris rutrum est at fringilla pulvinar. Nam ligula urna, lobortis non scelerisque
+                                        vel, molestie eu massa. Nullam mattis elit at tortor accumsan.</p>
+                              </div>
+                              <div class="tab-pane-item">
+                                   <h2>Managed Stuffs</h2>
+                                   <p>Quisque ullamcorper sem quis sapien cursus efficitur. Sed id sodales ipsum. Morbi
+                                        eleifend tempus erat sit amet vehicula. Nulla at posuere tellus, non mattis
+                                        erat. Nulla id massa gravida.</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="feature-image">
+                         <img src="images/team-image2.jpg" class="avatar img-responsive fade_left " alt=""></img>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" data-stellar-background-ratio="0.5">
+     <div class="container">
+          <div class="row">
+
+               
+
+               <div class="col-md-offset-3 col-md-6 col-sm-12">
+                    <div class="section-title fade_Right">
+                         <h1>Experiencia Laboral</h1>
+                    </div>
+               </div>
+
+               {% for project in projects%}
+
+
+               <div class="col-md-6 col-sm-5">
+                    <div class="team-thumb card">
+                         <iframe class="img-responsive fade_left" src={{project.url}} frameborder="0" class="responsive" height="100%" width="100%"></iframe>
+                         <span> <i class="fa fa-battery-full" aria-hidden="true"></i> <i class="fa fa-headphones" aria-hidden="true"></i> </span>
+                         <!--<img src="images/team-image1.jpg" class="img-responsive" alt="Andrew Orange">-->
+                         <div class="team-info team-thumb-up">
+                              <h2>{{project.Empresa}}</h2>
+                              <small>{{project.Cargo}}</small>
+                              <p>{{project.description}}</p>
+                              <p>{{project.date}}</p>
+                         </div>
+                    </div>
+               </div>
+
+               {%endfor%}
+
+          </div>
+     </div>
+</section>
+
+
+<!-- TESTIMONIAL -->
+<section id="pricing" data-stellar-background-ratio="0.5">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="testimonial-image fade_Right"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="testimonial-info">
+
+                         <div class="section-title">
+                              <h1>Skills</h1>
+                         </div>
+
+                         <div class="owl-carousel owl-theme fade_left">
+                              
+                              {% for exp in experiencia%}
+                              <div class="item">
+                                   <h2>{{exp.carrera}}</h2>
+                                   <h4>{{exp.lugarcarrera}}</h4>
+                                   <small>{{exp.descripcion}}</small>
+                                   <div class="testimonial-item">
+                                   </div>
+                              </div>
+                              {%endfor%}
+
+
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" data-stellar-background-ratio="0.5">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <form id="contact-form" role="form" action="" method="post">
+                         {% csrf_token %}
+                         <div class="section-title fade_left">
+                              <h1>Contactame</h1>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <input type="text" class="form-control fade_Right" placeholder="Nombre Completo" name="name" required="">
+                         </div>
+                         <div class="col-md-4 col-sm-4">
+                              <input type="email" class="form-control fade_Right" placeholder="Email" name="email"
+                                   required="">
+                         </div>
+                         <div class="col-md-4 col-sm-4">
+                              <input type="submit" class="form-control fade_Right" name="send message" value="Enviar Mensaje">
+                         </div>
+                         <div class="col-md-12 col-sm-12">
+                              <textarea class="form-control fade_Right" rows="8" placeholder="Tu Mensaje" name="message"
+                                   required=""></textarea>
+                         </div>
+                    </form>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="footer" data-stellar-background-ratio="0.5">
+     <div class="container">
+          <div class="row">
+
+               <div class="copyright-text col-md-12 col-sm-12">
+                    <div class="col-md-6 col-sm-6">
+                         <p>Copyright &copy; 2019 Kislev SA - Design:
+                              <a rel="nofollow" href="">David Steven Alipio Rojas</a>
+                         </p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <ul class="social-icon">
+                              <li><a href="https://www.linkedin.com/in/mar%C3%ADa-ximena-ceballos-hurtado/" class="fa fa-linkedin"></a></li>
+                              <li><a href="https://wa.me/+573134292447/?text=Hola!%20estamos%20interesados%20en%20tus%20Servicios" class="fa fa-whatsapp" aria-hidden="true"></a></li>
+                              <li><a href="https://instagram.com/ma.xiimena?utm_medium=copy_link" class="fa fa-instagram"></a></li>
+                         </ul>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="{% static 'js/jquery.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+<script src="{% static 'js/smoothscroll.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+<script src="{% static 'js/letter.js'%}"></script>
+<script src="{% static 'js/scrolleffect.js'%}"></script>
+
+
 {%endblock%}
