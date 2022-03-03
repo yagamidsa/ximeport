@@ -132,6 +132,8 @@ http://www.tooplate.com/view/2106-soft-landing
 
   html{
     -webkit-font-smoothing: antialiased;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   a {
