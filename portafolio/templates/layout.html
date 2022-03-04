@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>MyPortafolio</title>
     <meta charset="UTF-8">
@@ -10,23 +11,40 @@
     <meta name="keywords" content="">
     <meta name="team" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
-     <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
-     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
-     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
 
 
-     <link rel="stylesheet" href="{% static 'css/tooplate-style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css'%}">
 
-  
-    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--Archivo en donde está la función que vamos a invocar-->
+
+
+    <script>
+        $(document).on("click", "#invocar", Invocar);
+        function Invocar() {
+
+            Invocando();          //aquí estamos activando la función del otro archivo
+
+        }
+    </script>
+
+    <script src="{% static 'js/validarcorreo.js'%}"></script>
+
 </head>
+
 <body>
 
-        {% block content %}
-        {%  endblock %}
+    {% block content %}
+    {% endblock %}
 
 </body>
+
 </html>
