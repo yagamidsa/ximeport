@@ -13,8 +13,8 @@ def home(request):
         
         email_from = settings.EMAIL_HOST_USER
         recipient_list = ["yagamidsa19@gmail.com"]
-        num = send_mail(name + " Quiere Contactarte", message, email_from, recipient_list)
-        print(num)
+        send_mail(name + " Quiere Contactarte", message, email_from, recipient_list)
+        
         
     newvar = Project.objects.all()
     var1 = Skill.objects.all()
