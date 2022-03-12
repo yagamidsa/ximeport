@@ -21,4 +21,5 @@ def home(request):
     return render(request,'Home.html',{'projects': newvar,'experiencia':var1})
     
 
-
+def calculadora(request):
+    return render(request,'Calculator.html')

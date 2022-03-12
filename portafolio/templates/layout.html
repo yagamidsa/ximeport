@@ -47,4 +47,58 @@
 
 </body>
 
+
+<script>
+    var m1 = document.getElementById("input1");
+    var boton_de_calcular = document.getElementById("start");
+    boton_de_calcular.addEventListener("click", res);
+
+    function res() {
+
+
+        m2 = (m1.value * 5) / 100;
+        multi = m2 * 12;
+        m7 = (m2 * 10) / 100;
+        m9 = (m7 * 10) / m1.value;
+        document.getElementById("input2").value = m2;
+        document.getElementById("input3").value = multi;
+
+        m4 = new Intl.NumberFormat().format(m1.value)
+        document.getElementById("input1").value = '$' + m4;
+        m5 = new Intl.NumberFormat().format(m2)
+        document.getElementById("input2").value = '$' + m5;
+        m6 = new Intl.NumberFormat().format(multi)
+        document.getElementById("input3").value = '$' + m6;
+        document.getElementById("input4").value = '$' + m4;
+        document.getElementById("input5").value = '$' + m5;
+        m8 = new Intl.NumberFormat().format(m7)
+        document.getElementById("input6").value = '$' + m8;
+        document.getElementById("input7").value = '$' + m4;
+        document.getElementById("input8").value = '$' + m8;
+        m10 = new Intl.NumberFormat().format(m9)
+        document.getElementById("input9").value = '%' + m10;
+
+    }
+
+    var boton_de_limpiar = document.getElementById("clean");
+    boton_de_limpiar.addEventListener("click", lim);
+
+
+    function lim() {
+
+        document.getElementById("input1").value = '';
+        document.getElementById("input2").value = '';
+        document.getElementById("input3").value = '';
+        document.getElementById("input4").value = '';
+        document.getElementById("input5").value = '';
+        document.getElementById("input6").value = '';
+        document.getElementById("input7").value = '';
+        document.getElementById("input8").value = '';
+        document.getElementById("input9").value = '';
+    }
+
+</script>
+
+
+
 </html>
